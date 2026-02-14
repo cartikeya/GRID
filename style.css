@@ -32,21 +32,78 @@ body {
   position: relative;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("Raghu\ \(1\).png");
+  top: 190px;
+  left: 100px;
+  width: 400px;
+  height: 400px;
+  background-image:
+    url("Raghu\ \(1\).png"),
+    linear-gradient(to right, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0.5)),
+    conic-gradient(
+      from 45deg,
+      #d53e33 0deg 90deg,
+      #fbb300 90deg 180deg,
+      #377af5 180deg 270deg,
+      #399953 270deg 360deg
+    );
+
   background-size: 400px;
-  background-position: right 200px center;
+  background-position: left 100px top 190px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   opacity: 1;
   pointer-events: none;
   z-index: -1;
+  border: 3px solid #404f5d;
+  border-radius: 2000px;
+} */
+body::before {
+  content: "";
+  position: fixed;
+  top: 190px;
+  left: 100px;
+  width: 400px;
+  height: 400px;
+
+  background-image: url("Raghu (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 185px; /* slightly bigger than image */
+  left: 95px;
+  width: 410px;
+  height: 410px;
+
+  border-radius: 50%;
+
+  background: conic-gradient(#5371a8, #2c88a1);
+
+  animation: rotateBorder 4s linear infinite;
+  z-index: -2;
+  pointer-events: none;
+}
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 spline-viewer {
@@ -318,12 +375,32 @@ spline-viewer {
 }
 
 .nav-brand {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: var(--secondary-color);
   text-decoration: none;
   letter-spacing: -0.5px;
   text-align: center;
+  background: linear-gradient(
+    90deg,
+    #00ccff 0%,
+    #63b3ed 50%,
+    #3182ce 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorFlow 3s linear infinite;
+}
+
+@keyframes colorFlow {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 .nav-links {
@@ -508,13 +585,38 @@ a[href*="studio.spline.design"] {
   padding: 8px 24px;
   font-size: 0.9rem;
 }
+.typewriter h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation:
+    typing 3s steps(28, end) 0s infinite,
+    blink-caret 0.75s step-end infinite;
+}
 
-/* --- Hero Section --- */
-.hero-subtitle {
-  font-size: 2rem;
-  color: var(--primary-color);
-  display: block;
-  margin-top: 0.5rem;
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  85% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  50% {
+    border-right-color: var(--primary-color);
+  }
+  51%,
+  100% {
+    border-right-color: transparent;
+  }
 }
 
 .section-desc {

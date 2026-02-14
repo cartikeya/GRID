@@ -1,114 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - G R I D Club</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"
+    ></script>
+  </head>
 
-<body>
-    <spline-viewer url="scene.splinecode"></spline-viewer>
+  <body>
     <nav class="navbar">
-        <a href="home.html" class="nav-brand">G R I D</a>
-        <button class="hamburger" aria-label="Toggle navigation">☰</button>
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="materials.html">Materials</a></li>
-            <li><a href="announcements.html">Announcements</a></li>
-            <li><a href="vision_mission.html">Vision & Mission</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="https://forms.google.com/your-form-url" target="_blank" rel="noopener"
-                    class="btn btn-primary nav-cta js-join-btn">Join Club</a></li>
-        </ul>
+      <a href="home.html" class="nav-brand">G R I D</a>
+      <button class="hamburger" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a href="announcements.html">Announcements</a></li>
+        <li><a href="vision_mission.html">Vision & Mission</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li>
+          <a
+            href="https://forms.google.com/your-form-url"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary nav-cta js-join-btn"
+            >Join Club</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <div class="page-container">
-        <section class="hero-section" data-aos="fade-up">
-            <h1 class="hero-title">G R I D<br><span class="hero-subtitle">Group-Ready, Interview-Driven</span></h1>
-            <p class="hero-tagline">Not Just Coding — Building Logical Minds Through Real Challenges.</p>
-            <div class="gate-buttons">
-                <a href="https://forms.google.com/your-form-url" target="_blank" rel="noopener"
-                    class="btn btn-primary js-join-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                    Join Club
-                </a>
-                <a href="#why-grid" class="btn btn-outline js-scroll-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                    </svg>
-                    Explore Activities
-                </a>
-            </div>
-        </section>
+      <section class="hero-section" data-aos="fade-up">
+        <h1 class="hero-title">G R I D<br /></h1>
+        <div class="typewriter">
+          <h1>Group-Ready, Interview-Driven</h1>
+        </div>
 
-        <section class="section" id="introduction" data-aos="fade-up">
-            <h2 class="section-title">Who We Are</h2>
-            <p class="section-desc">
-                G R I D is a technical student club dedicated to bridging the gap between academic learning and industry
-                demands.
-                We focus on cultivating a problem-solving mindset, technical proficiency, and collaborative skills to
-                ensure every member is future-ready.
-            </p>
-        </section>
+        <p class="hero-tagline">
+          Not Just Coding — Building Logical Minds Through Real Challenges.
+        </p>
+        <div class="gate-buttons">
+          <a
+            href="https://forms.google.com/your-form-url"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary js-join-btn"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Join Club
+          </a>
+          <a href="#why-grid" class="btn btn-outline js-scroll-btn">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon
+                points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+              ></polygon>
+            </svg>
+            Explore Activities
+          </a>
+        </div>
+      </section>
 
-        <section class="section" id="why-grid">
-            <h2 class="section-title" data-aos="fade-up">Why G R I D?</h2>
-            <div class="card-grid">
-                <div class="card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Structured Learning</h3>
-                    <p>Curated paths for DSA, Development, and System Design.</p>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Peer Programming</h3>
-                    <p>Collaborative coding sessions to learn from each other.</p>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Mock Interviews</h3>
-                    <p>Real-world interview simulations with feedback.</p>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Industry Projects</h3>
-                    <p>Hands-on experience with live projects and hackathons.</p>
-                </div>
-            </div>
-        </section>
+      <section class="section" id="introduction" data-aos="fade-up">
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-desc">
+          G R I D is a technical student club dedicated to bridging the gap
+          between academic learning and industry demands. We focus on
+          cultivating a problem-solving mindset, technical proficiency, and
+          collaborative skills to ensure every member is future-ready.
+        </p>
+      </section>
 
-        <section class="section" id="outcomes">
-            <h2 class="section-title" data-aos="fade-up">Expected Outcomes</h2>
-            <div class="card-grid">
-                <div class="card text-center" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="card-icon">🚀</h3>
-                    <h3>Placement Ready</h3>
-                    <p>Master competitive programming and technical interviews.</p>
-                </div>
-                <div class="card text-center" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="card-icon">💡</h3>
-                    <h3>Problem Solvers</h3>
-                    <p>Develop a logical approach to tackling complex challenges.</p>
-                </div>
-                <div class="card text-center" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="card-icon">🤝</h3>
-                    <h3>Team Players</h3>
-                    <p>Experience working in agile, collaborative environments.</p>
-                </div>
-            </div>
-        </section>
+      <section class="section" id="why-grid">
+        <h2 class="section-title" data-aos="fade-up">Why G R I D?</h2>
+        <div class="card-grid">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Structured Learning</h3>
+            <p>Curated paths for DSA, Development, and System Design.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Peer Programming</h3>
+            <p>Collaborative coding sessions to learn from each other.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Mock Interviews</h3>
+            <p>Real-world interview simulations with feedback.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <h3>Industry Projects</h3>
+            <p>Hands-on experience with live projects and hackathons.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="outcomes">
+        <h2 class="section-title" data-aos="fade-up">Expected Outcomes</h2>
+        <div class="card-grid">
+          <div class="card text-center" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="card-icon">🚀</h3>
+            <h3>Placement Ready</h3>
+            <p>Master competitive programming and technical interviews.</p>
+          </div>
+          <div class="card text-center" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="card-icon">💡</h3>
+            <h3>Problem Solvers</h3>
+            <p>Develop a logical approach to tackling complex challenges.</p>
+          </div>
+          <div class="card text-center" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="card-icon">🤝</h3>
+            <h3>Team Players</h3>
+            <p>Experience working in agile, collaborative environments.</p>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="script.js"></script>
-</body>
-
+  </body>
 </html>
