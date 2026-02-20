@@ -265,7 +265,7 @@ spline-viewer {
 
 .gate-content {
   z-index: 10;
-  text-align: left;
+  text-align: center;
   padding: 2rem;
   background: transparent;
   -webkit-backdrop-filter: none;
@@ -273,7 +273,7 @@ spline-viewer {
   border: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
   animation: content-enter 1s ease-out forwards;
 }
