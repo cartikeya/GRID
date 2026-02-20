@@ -103,10 +103,11 @@ body::after {
     position: fixed;
     top: 100px;
     left: 50%;
+    transform: translateX(-50%);
     width: 250px;
     height: 250px;
 
-    background-image: url("Raghu (1).png");
+    background-image: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,24 +117,7 @@ body::after {
     pointer-events: none;
   }
   body::after {
-    content: "";
-    position: fixed;
-    top: 95px;
-    left: 50%;
-    width: 250px;
-    height: 250px;
-
-    border-radius: 50%;
-    background: conic-gradient(
-      var(--secondary-color),
-      var(--primary-color),
-      #00ccff,
-      var(--secondary-color)
-    );
-
-    animation: rotateBorder 4s linear infinite;
-    z-index: -2;
-    pointer-events: none;
+    display: none;
   }
 }
 
@@ -143,10 +127,11 @@ body::after {
     position: fixed;
     top: 80px;
     left: 50%;
+    transform: translateX(-50%);
     width: 180px;
     height: 180px;
 
-    background-image: url("Raghu (1).png");
+    background-image: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,23 +141,7 @@ body::after {
     pointer-events: none;
   }
   body::after {
-    content: "";
-    position: fixed;
-    top: 185px;
-    left: 95px;
-    width: 190px;
-    height: 190px;
-
-    border-radius: 50%;
-    background: conic-gradient(
-      var(--secondary-color),
-      var(--primary-color),
-      #00ccff,
-      var(--secondary-color)
-    );
-    animation: rotateBorder 4s linear infinite;
-    z-index: -2;
-    pointer-events: none;
+    display: none;
   }
 }
 @keyframes rotateBorder {
@@ -867,6 +836,21 @@ a[href*="studio.spline.design"] {
     flex-direction: column;
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .typewriter h1 {
+    font-size: 1rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: visible;
+    border-right: none;
+    animation: none;
+  }
+
+  .hero-section {
+    padding: 3rem 1rem;
   }
 }
 
