@@ -69,8 +69,8 @@ body::before {
   position: fixed;
   top: 190px;
   left: 100px;
-  width: 400px;
-  height: 400px;
+  width: clamp(300px, 30vw, 400px);
+  height: clamp(300px, 30vw, 400px);
 
   background-image: url("Raghu (1).png");
   background-size: cover;
@@ -84,10 +84,10 @@ body::before {
 body::after {
   content: "";
   position: fixed;
-  top: 185px;
-  left: 95px;
-  width: 410px;
-  height: 410px;
+  top: 180px;
+  left: 90px;
+  width: clamp(320px, 32vw, 420px);
+  height: clamp(320px, 32vw, 420px);
 
   border-radius: 50%;
   background: conic-gradient(#00ccff, #ccc);
@@ -104,8 +104,8 @@ body::after {
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px;
-    height: 250px;
+    width: clamp(200px, 25vw, 250px);
+    height: clamp(200px, 25vw, 250px);
 
     background-image: none;
     background-size: cover;
@@ -128,8 +128,8 @@ body::after {
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 180px;
-    height: 180px;
+    width: clamp(150px, 20vw, 180px);
+    height: clamp(150px, 20vw, 180px);
 
     background-image: none;
     background-size: cover;
@@ -793,6 +793,10 @@ a[href*="studio.spline.design"] {
 
 /* --- Mobile Responsive --- */
 @media (max-width: 768px) {
+  .nav-brand {
+    font-size: 1.8rem;
+  }
+
   .brand-title {
     font-size: 3.5rem;
   }
@@ -838,6 +842,10 @@ a[href*="studio.spline.design"] {
     max-width: 300px;
     margin: 0 auto;
     align-items: center;
+  }
+
+  .nav-brand {
+    font-size: 1.3rem;
   }
 
   .typewriter h1 {
