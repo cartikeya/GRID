@@ -399,6 +399,23 @@ spline-viewer {
   color: white;
 }
 
+/* Small variant used for inline 'Apply now' links */
+.apply-btn {
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 0.5rem;
+}
+
+.apply-btn:focus {
+  outline: 3px solid rgba(49, 130, 206, 0.25);
+  outline-offset: 2px;
+}
+
 /* --- Navbar --- */
 .navbar {
   position: fixed;
