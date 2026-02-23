@@ -72,7 +72,7 @@ body::before {
   width: clamp(300px, 30vw, 400px);
   height: clamp(300px, 30vw, 400px);
 
-  background-image: url("Raghu (1).png");
+  background-image: url("https://res.cloudinary.com/dboou1pyn/image/upload/v1771855081/Raghu_1_k0gl8j.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
